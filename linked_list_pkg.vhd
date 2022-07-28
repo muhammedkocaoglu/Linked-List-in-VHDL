@@ -65,7 +65,7 @@ package body linked_list_pkg is
             end if;
         end procedure;
 
-        procedure push_back(constant din : in std_logic_vector) is
+        procedure push_back(din : in std_logic_vector) is
         begin
             push_back(to_integer(unsigned(din)));
         end procedure;
@@ -90,7 +90,7 @@ package body linked_list_pkg is
             end if;
         end procedure;
 
-        procedure push_front(constant din : in std_logic_vector) is
+        procedure push_front(din : in std_logic_vector) is
         begin
             push_front(to_integer(unsigned(din)));
         end procedure;
